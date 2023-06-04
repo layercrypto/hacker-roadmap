@@ -2,52 +2,54 @@
     <img src="https://i.imgur.com/VeEYEkT.png" alt="Hacker roadmap" /><br>
 </p>
 
-This repository is an overview of what you need to learn penetration testing and a collection of hacking tools, resources and references to practice ethical hacking. Most of the tools are UNIX compatible, free and open source.
+Repository ini adalah gambaran tentang apa yang perlu Anda pelajari dalam penetration testing dan kumpulan alat-alat hacking, sumber daya, dan referensi untuk berlatih ethical hacking. Sebagian besar alat-alat ini kompatibel dengan UNIX, gratis, dan open source.
 
 ## Status
 
-**This project has been archived**. Content might be outdated. Me and some friends are working on a brand new project that will take place here and replace the whole repository. The goal will remain the same: provide resources about professional information security for newcomers, with complete focus on training, certifications and job requirements. We don't expect this to come out before Q1 2023.
+**Proyek ini telah diarsipkan**. Konten mungkin sudah tidak terbaru. Saya dan beberapa teman sedang mengerjakan proyek baru yang akan menggantikan keseluruhan repositori ini. Tujuannya tetap sama: menyediakan sumber daya tentang keamanan informasi profesional bagi pemula, dengan fokus lengkap pada pelatihan, sertifikasi, dan persyaratan pekerjaan. Kami tidak berharap proyek baru ini akan selesai sebelum Q1 2023.
 
 ----
 
-## Before you start
+## Sebelum Anda memulai
 
-- If you're new to information security, forget everything you know about hacking.
-- Don't start using tools without reading about pen testing and how it works (see [Additional resources](#additional-resources) section).
-- Don't download or use tools if you haven't audited its code.
-- Don't use these tools to do stupid things like investigating/hacking without consent on your friends, or worst, your recruiter.
-- Read books, manuals, articles, be curious and not just a [script kiddie](https://www.wikihow.com/Avoid-Becoming-a-Script-Kiddie).
-- I wish you don't use these tools for illegal purposes, but if you do, I sure hope you know what you're doing.
-- Practice using [challenges](#challenges), not real targets!
+- Jika Anda baru dalam keamanan informasi, lupakan segala hal yang Anda ketahui tentang hacking.
+- Jangan mulai menggunakan alat-alat tanpa membaca tentang pen testing dan bagaimana cara kerjanya (lihat bagian [Sumber daya tambahan](#additional-resources)).
+- Jangan mengunduh atau menggunakan alat-alat jika Anda belum memeriksa kode-kodenya.
+- Jangan gunakan alat-alat ini untuk melakukan hal-hal bodoh seperti menyelidiki/hack tanpa persetujuan pada teman Anda, atau yang lebih buruk, rekruter Anda.
+- Baca buku, manual, artikel, jadilah penasaran, dan jangan hanya menjadi [script kiddie](https://www.wikihow.com/Avoid-Becoming-a-Script-Kiddie) saja.
+- Saya berharap Anda tidak menggunakan alat-alat ini untuk tujuan illegal, tetapi jika Anda melakukannya, saya berharap Anda tahu apa yang Anda lakukan.
+- Berlatih menggunakan [challenges](#challenges), bukan target yang nyata!
 
-# Table of Contents
+# Daftar Isi
 
-- [Introduction](#introduction)
-  - [What is penetration testing?](#what-is-penetration-testing)
-  - [Want to become a penetration tester?](#want-to-become-a-penetration-tester)
-- [Some vocabulary](#some-vocabulary)
-- [Difference between hacking and ethical hacking](#difference-between-hacking-and-ethical-hacking)
-- [Languages](#languages)
-- [Content Management Systems](#content-management-systems)
-- [Basic steps of pen testing](#basic-steps-of-pen-testing)
-- [Tools by category](#tools-by-category)
+- [Pengantar](#introduction)
+  - [Apa itu penetration testing?](#what-is-penetration-testing)
+  - [Ingin menjadi penetration tester?](#want-to-become-a-penetration-tester)
+- [Beberapa kosakata](#some-vocabulary)
+- [Perbedaan antara hacking dan ethical hacking](#difference-between-hacking-and-ethical-hacking)
+- [Bahasa](#languages)
+- [Sistem Manajemen Konten](#content-management-systems)
+- [Langkah-langkah dasar pen testing](#basic-steps-of-pen-testing)
+- [Alat-alat berdasarkan kategori](#tools-by-category)
   - [:male_detective: Information Gathering](#male_detective-information-gathering)
   - [:lock: Password Attacks](#lock-password-attacks)
     - [:memo: Wordlists](#memo-wordlists)
   - [:globe_with_meridians: Wireless Testing](#globe_with_meridians-wireless-testing)
   - [:wrench: Exploitation Tools](#wrench-exploitation-tools)
   - [:busts_in_silhouette: Sniffing & Spoofing](#busts_in_silhouette-sniffing--spoofing)
-  - [:rocket: Web Hacking](#rocket-web-hacking)
+  - [:rocket: Web Hacking](#rocket
+
+-web-hacking)
   - [:tada: Post Exploitation](#tada-post-exploitation)
   - [:package: Frameworks](#package-frameworks)
-- [Additional resources](#additional-resources)
-  - [Books / Manuals](#books--manuals)
-  - [Discussions](#discussions)
-  - [Security Advisories](#security-advisories)
+- [Sumber daya tambahan](#additional-resources)
+  - [Buku / Manual](#books--manuals)
+  - [Diskusi](#discussions)
+  - [Informasi Keamanan](#security-advisories)
   - [Challenges](#challenges)
-- [License](#license)
+- [Lisensi](#license)
 
-(TOC made with [nGitHubTOC](https://imthenachoman.github.io/nGitHubTOC/))
+(TOC dibuat dengan [nGitHubTOC](https://imthenachoman.github.io/nGitHubTOC/))
 
 # Introduction
 
