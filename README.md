@@ -51,47 +51,51 @@ Repository ini adalah gambaran tentang apa yang perlu Anda pelajari dalam penetr
 
 (TOC dibuat dengan [nGitHubTOC](https://imthenachoman.github.io/nGitHubTOC/))
 
-# Introduction
+# Pengantar
 
-## What is penetration testing?
+## Apa itu penetration testing?
 
-Penetration testing is a type of security testing that is used to test the security of an application. It is conducted to find a security risk which might be present in a system.
+Penetration testing adalah jenis pengujian keamanan yang digunakan untuk menguji keamanan suatu aplikasi. Tujuannya adalah untuk menemukan risiko keamanan yang mungkin ada dalam suatu sistem.
 
-If a system is not secure, then an attacker may be able to disrupt or take unauthorized control of that system. A security risk is normally an accidental error that occurs while developing and implementing software. For example, configuration errors, design errors, and software bugs, etc. [Learn more](https://www.tutorialspoint.com/penetration_testing/penetration_testing_quick_guide.htm)
+Jika suatu sistem tidak aman, maka seorang penyerang mungkin dapat mengganggu atau mengambil alih kontrol sistem tersebut tanpa izin. Risiko keamanan biasanya merupakan kesalahan yang tidak disengaja yang terjadi saat mengembangkan dan mengimplementasikan perangkat lunak. Misalnya, kesalahan konfigurasi, kesalahan desain, dan bug perangkat lunak, dll. [Pelajari lebih lanjut](https://www.tutorialspoint.com/penetration_testing/penetration_testing_quick_guide.htm)
 
-## Want to become a penetration tester?
+## Ingin menjadi seorang penetration tester?
 
-Knowing about risks on the internet and how they can be prevented is very useful, especially as a developer. Web hacking and penetration testing is the v2.0 of self-defense! But is knowing about tools and how to use them really all you need to become a pen tester? Surely not. A real penetration tester must be able to proceed rigorously and detect the weaknesses of an application. They must be able to identify the technology behind and test every single door that might be open to hackers.
+Mengetahui tentang risiko di internet dan bagaimana cara mencegahnya sangat berguna, terutama sebagai seorang pengembang. Web hacking dan penetration testing adalah versi 2.0 dari pertahanan diri! Tetapi apakah hanya mengetahui tentang alat-alat dan cara menggunakannya sudah cukup untuk menjadi seorang pen tester? Tentu saja tidak. Seorang penetration tester yang sebenarnya harus dapat bekerja secara cermat dan mendeteksi kelemahan dari suatu aplikasi. Mereka harus dapat mengidentifikasi teknologi di baliknya dan menguji setiap pintu yang mungkin terbuka bagi para hacker.
 
-This repository aims first to establish a reflection method on penetration testing and explain how to proceed to secure an application. And secondly, to regroup all kind of tools or resources pen testers need. **Be sure to know basics of programming languages and internet security before learning pen testing.**
+Repository ini bertujuan pertama-tama untuk membangun metode refleksi dalam penetration testing dan menjelaskan bagaimana cara mengamankan suatu aplikasi. Dan kedua, untuk mengumpulkan semua jenis alat atau sumber daya yang dibutuhkan oleh pen testers. **Pastikan Anda mengetahui dasar-dasar bahasa pemrograman dan keamanan internet sebelum mempelajari pen testing.**
 
-Also, this is important to inform yourself about the law and what you are allowed to do or not. According to your country, the computer laws are not the same. First, check laws about privacy and surveillance: [Nine eyes countries](https://en.wikipedia.org/wiki/Five_Eyes#Other_international_cooperatives), [Five eyes](https://en.wikipedia.org/wiki/Five_Eyes) and Fourteen Eyes. Always check if what you're doing is legal. Even when it's not offensive, information gathering can also be illegal!
+Selain itu, penting untuk menginformasikan diri Anda tentang hukum dan apa yang diizinkan atau tidak diizinkan. Menurut negara Anda, hukum komputer tidak sama. Pertama, periksa hukum tentang privasi dan pengawasan: [Negara-negara Nine Eyes](https://en.wikipedia.org/wiki/Five_Eyes#Other_international_cooperatives), [Five Eyes](https://en.wikipedia.org/wiki/Five_Eyes), dan Fourteen Eyes. Selalu periksa apakah apa yang Anda lakukan legal. Bahkan ketika tidak bersifat menyerang, pengumpulan informasi juga dapat ilegal!
 
-([Table of Contents](#table-of-contents))
+([Daftar Isi](#table-of-contents))
 
-# Some vocabulary
+# Beberapa kosakata
 
-**Infosec**: Information security, which is the practice of preventing unauthorized access, use, disclosure, disruption, modification, inspection, recording or destruction of information. The information or data may take any form, e.g. electronic or physical. Infosec can also be a person who practices ethical security. [Wikipedia](https://en.wikipedia.org/wiki/Information_security)
+**Infosec**: Keamanan informasi, yang merupakan praktik untuk mencegah akses, penggunaan, pengungkapan, gangguan, modifikasi, inspeksi, pencatatan, atau penghancuran informasi yang tidak sah. Informasi atau data tersebut dapat berbentuk elektronik atau fisik. Infosec juga dapat merujuk pada seseorang yang menjalankan keamanan etis. [Wikipedia](https://en.wikipedia.org/wiki/Information_security)
 
-**Opsec**: Operations security, which is a process that identifies critical information to determine if friendly actions can be observed by enemy intelligence, determines if information obtained by adversaries could be interpreted to be useful to them, and then executes selected measures that eliminate or reduce adversary exploitation of friendly critical information. [Wikipedia](https://en.wikipedia.org/wiki/Operations_security)
+**Opsec**: Keamanan operasional, yang merupakan proses yang mengidentifikasi informasi kritis untuk menentukan apakah tindakan yang dilakukan dapat diamati oleh intelijen musuh, menentukan apakah informasi yang
 
-**Black/grey/white hat hacker**: Someone who uses bugs or exploits to break into systems or applications. The goal and the method differs depending if they're a black, grey or white hat hacker. A black hat is just someone malicious that does not wait permission to break into a system or application. A white hat is *usually* a security researcher who practice ethical hacking. A grey hat is just in the middle of these two kind of hackers, they might want to be malicious if it can be benefit (data breach, money, whistleblowing ...).
+ diperoleh oleh lawan dapat diinterpretasikan sebagai berguna bagi mereka, dan kemudian melaksanakan tindakan yang dipilih untuk menghilangkan atau mengurangi eksploitasi informasi kritis dari pihak lawan. [Wikipedia](https://en.wikipedia.org/wiki/Operations_security)
 
-**Red team**: According to Wikipedia, a red team or the red team is an independent group that challenges an organization to improve its effectiveness by assuming an adversarial role or point of view. It is particularly effective in organizations with strong cultures and fixed ways of approaching problems. The United States intelligence community (military and civilian) has red teams that explore alternative futures and write articles as if they were foreign world leaders. Little formal doctrine or publications about Red Teaming in the military exist. In infosec exercises, Red teamers are playing the role of attackers. [Wikipedia](https://en.wikipedia.org/wiki/Red_team)
+**Black/grey/white hat hacker**: Seseorang yang menggunakan bug atau eksploitasi untuk meretas sistem atau aplikasi. Tujuan dan metode mereka berbeda tergantung apakah mereka adalah black hat, grey hat, atau white hat hacker. Black hat adalah seseorang yang jahat yang tidak menunggu izin untuk meretas sistem atau aplikasi. White hat biasanya adalah seorang peneliti keamanan yang menjalankan ethical hacking. Grey hat berada di tengah-tengah antara kedua jenis hacker ini, mereka mungkin ingin berbuat jahat jika itu bisa memberikan manfaat (penyusupan data, uang, whistleblowing, dll).
 
-**Blue team**: A blue team is a group of individuals who perform an analysis of information systems to ensure security, identify security flaws, verify the effectiveness of each security measure, and to make certain all security measures will continue to be effective after implementation. As a result, blue teams were developed to design defensive measures against red team activities. In infosec exercises, Blue teamers are playing the role of defenders. [Wikipedia](https://en.wikipedia.org/wiki/Blue_team_(computer_security))
+**Tim merah**: Menurut Wikipedia, tim merah adalah kelompok independen yang menantang suatu organisasi untuk meningkatkan efektivitasnya dengan mengasumsikan peran atau sudut pandang lawan. Hal ini terutama efektif dalam organisasi dengan budaya kuat dan cara yang tetap dalam menghadapi masalah. Komunitas intelijen Amerika Serikat (militer dan sipil) memiliki tim merah yang mengeksplorasi masa depan alternatif dan menulis artikel seolah-olah mereka adalah pemimpin dunia asing. Sedikit doktrin formal atau publikasi tentang Tim Merah di militer. Dalam latihan infosec, Tim Merah berperan sebagai penyerang. [Wikipedia](https://en.wikipedia.org/wiki/Red_team)
 
-**Penetration tester**: An ethical hacker who practices security, tests applications and systems to prevent intrusions or find vulnerabilities.
+**Tim biru**: Tim biru adalah kelompok individu yang melakukan analisis terhadap sistem informasi untuk memastikan keamanannya, mengidentifikasi kelemahan keamanan, memverifikasi efektivitas setiap langkah keamanan, dan memastikan semua langkah keamanan akan tetap efektif setelah implementasi. Sebagai hasilnya, tim biru dikembangkan untuk merancang langkah-langkah pertahanan terhadap aktivitas tim merah. Dalam latihan infosec, anggota Tim Biru berperan sebagai pembela. [Wikipedia](https://en.wikipedia.org/wiki/Blue_team_(computer_security))
 
-**Security researcher**: Someone who practices pen testing and browses the web to find phishing/fake websites, infected servers, bugs or vulnerabilities. They can work for a company as a security consultant and are most likely a Blue teamer.
+**Penetration tester**: Seorang ethical hacker yang menjalankan keamanan, menguji aplikasi dan sistem untuk mencegah intrusi atau menemukan kerentanan.
 
-**Reverse engineering**: Reverse engineering, also called back engineering, is the process by which a man-made object is deconstructed to reveal its designs, architecture, or to extract knowledge from the object. Similar to scientific research, the only difference being that scientific research is about a natural phenomenon. [Wikipedia](https://en.wikipedia.org/wiki/Reverse_engineering)
+**Peneliti keamanan**: Seseorang yang menjalankan pen testing dan menjelajahi web untuk menemukan situs phishing/palsu, server terinfeksi, bug atau kerentanan. Mereka dapat bekerja untuk perusahaan sebagai konsultan keamanan dan kemungkinan besar sebagai anggota Tim Biru.
 
-**Social engineering**: In the context of information security, it refers to psychological manipulation of people into performing actions or divulging confidential information. A type of confidence trick for the purpose of information gathering, fraud, or system access, it differs from a traditional "con" in that it is often one of many steps in a more complex fraud scheme. The term "social engineering" as an act of psychological manipulation of a human, is also associated with the social sciences, but its usage has caught on among computer and information security professionals. [Wikipedia](https://en.wikipedia.org/wiki/Social_engineering_(security))
+**Reverse engineering**: Reverse engineering, juga disebut back engineering, adalah proses di mana suatu objek buatan manusia didekonstruksi untuk mengungkapkan desain, arsitektur, atau untuk mengekstrak pengetahuan dari objek tersebut. Mirip dengan penelitian ilmiah, satu-satunya perbedaan adalah bahwa penelitian ilmiah berhubungan dengan fenomena alam. [Wikipedia](https://en.wikipedia.org/wiki/
 
-**Threat analyst**: A threat hunter, also called a cybersecurity threat analyst, is a security professional or managed service provider (MSP) that proactively uses manual or machine-assisted techniques to detect security incidents that may elude the grasp of automated systems. Threat hunters aim to uncover incidents that an enterprise would otherwise not find out about, providing chief information security officers (CISOs) and chief information officers (CIOs) with an additional line of defense against advanced persistent threats (APTs). [SearchCIO](https://searchcio.techtarget.com/definition/threat-hunter-cybersecurity-threat-analyst)
+Reverse_engineering)
 
-([Table of Contents](#table-of-contents))
+**Social engineering**: Dalam konteks keamanan informasi, istilah ini mengacu pada manipulasi psikologis terhadap orang-orang untuk melakukan tindakan atau mengungkapkan informasi rahasia. Jenis penipuan kepercayaan untuk tujuan pengumpulan informasi, penipuan, atau akses sistem, berbeda dari "kon" tradisional karena sering menjadi salah satu langkah dalam skema penipuan yang lebih kompleks. Istilah "social engineering" sebagai tindakan manipulasi psikologis terhadap manusia juga terkait dengan ilmu sosial, tetapi penggunaannya telah menjadi umum di kalangan profesional keamanan komputer dan informasi. [Wikipedia](https://en.wikipedia.org/wiki/Social_engineering_(security))
+
+**Analisis ancaman**: Seorang penelusur ancaman, juga disebut sebagai analis ancaman keamanan siber, adalah profesional keamanan atau penyedia layanan manajemen (MSP) yang secara proaktif menggunakan teknik manual atau berbantuan mesin untuk mendeteksi insiden keamanan yang mungkin terlewat oleh sistem otomatis. Threat hunter bertujuan untuk mengungkapkan insiden yang sebaliknya tidak akan diketahui oleh perusahaan, memberikan kepala petugas keamanan informasi (CISO) dan kepala petugas informasi (CIO) dengan lapisan pertahanan tambahan terhadap ancaman yang bertahan lama (APTs) yang canggih. [SearchCIO](https://searchcio.techtarget.com/definition/threat-hunter-cybersecurity-threat-analyst)
+
+([Daftar Isi](#table-of-contents))
 
 # Difference between hacking and ethical hacking
 
